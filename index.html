@@ -3,310 +3,604 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritchie John San Gaspar</title>
+    <title>Richie John San Gaspar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(194, 194, 194, 1) 25%, rgba(153, 151, 151, 1) 50%, rgba(87, 86, 86, 1) 75%, rgba(0, 0, 0, 1) 100%);
-            color: #222;
-        }
-        p {
-            color: #222;
-            font-family: inherit;
-        }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
-            font-family: Verdana;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 24px;
-        }
-        .card {
-            background: #d3d2d2;
-            border-radius: 14px;
-            box-shadow: 0 6px 24px rgba(74, 144, 226, 0.08);
-            padding: 32px;
-            margin: 0;
-        }
-        .card h1, .card h2, .card h3, .card h4 {
-            margin: 0;
-            color: rgb(0, 0, 0);
-            font-family: Verdana;
-        }
-        section {
-            margin-bottom: -25px;
-        }
-        .card h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .card h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .card h3 {
-            font-size: 1.5em;
-            margin-bottom: 5px;
-        }
-        .card h4 {
-            font-size: 1.5em;
-            margin-bottom: 5px;
-        }
-        .card p {
-            font-size: 1em;
-            line-height: 1.6;
-        }
-        .card ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            cursor: default;
-        }
-        .card ul li {
-            background: #e0e0e0;
-            margin: 5px;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background 0.3s, transform 0.3s;
-            display: block;
-        }
-        button {
-            background-color: #4a90e2;
-            color: white;
-            border: 2px solid rgb(206, 206, 206);
-            padding: 15px 40px;
-            border-radius: 50px;
-            box-shadow: 4px 3px 10px #bcbcbc;
-            margin: 0 auto;
-            display: block;
-            font-family: monospace;
-            cursor: pointer;
-            transition: box-shadow 0.3s ease;
-        }
-        button:hover {
-            box-shadow: inset 2px 2px 10px #6386b4, inset -2px -2px 10px #ffffff;
-            background-color: #357abd;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
-        .menu {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 15px 0;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .menu nav {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-        .menu li {
-            position: relative;
-        }
-        .menu li a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .menu li a:hover {
-            background-color: #4a90e2;
-            color: white;
-        }
-        .dropdown {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .menu li:hover .dropdown {
-            display: block;
-        }
-        .dropdown a {
-            color: #333;
-            padding: 12px 16px;
-            display: block;
-            text-decoration: none;
-        }
-        .dropdown a:hover {
-            background-color: #4a90e2;
-            color: white;
-        }
-        .card section {
-            scroll-margin-top: 0px;
-            padding: 20px 0;
-            transition: all 0.3s ease;
-        }
-        .container {
-            margin-top: 80px;
-        }
-        @media (max-width: 768px) {
-            .card {
-                padding: 15px;
-                margin: 10px;
-            }
-            .card h1 {
-                font-size: 2em;
-            }
-            .card h2 {
-                font-size: 1.5em;
-            }
-            .card ul li {
-                box-sizing: border-box;
-            }
-            .card h1 {
-                font-size: 1.8em;
-            }
-            .card h2 {
-                font-size: 1.3em;
-            }
-            .card p {
-                font-size: 0.9em;
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-            @media (max-width: 480px) {
-                .card ul li {
-                    width: 100%;
-                }
-                .card h1 {
-                    font-size: 1.5em;
-                }
-                .card h2 {
-                    font-size: 1.2em;
-                }
-                .card p {
-                    font-size: 0.85em;
-                }
-            }
-        }
+    <style>
+        /* General Styling */
+:root {
+    --primary-bg: #1A0D32; /* Dark purple background */
+    --secondary-bg: #2B1647; /* Slightly lighter purple for cards */
+    --text-color: #E0E0E0; /* Light grey for most text */
+    --highlight-color: #A06AD3; /* Bright purple for highlights */
+    --accent-color: #6A0DAD; /* Deeper purple for accents */
+    --white-color: #FFFFFF;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-poppins);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--white-color);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--white-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu-icon {
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--white-color);
+    display: none; /* Hidden on desktop */
+}
+
+.navbar .nav-links a {
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.intro-card {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 40px;
+}
+
+.intro-card .greeting {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+}
+
+.intro-card .highlight-name {
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.intro-card h1 {
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.intro-card .cover-text {
+    background-color: var(--accent-color);
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.intro-card .tagline {
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+.avatar-container {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0 0 30px rgba(160, 106, 211, 0.4);
+}
+
+.avatar {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-bg); /* Inner border to create depth */
+}
+
+/* Career Opportunity Section */
+.career-opportunity-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.career-opportunity-section h2 {
+    color: var(--white-color);
+}
+
+.career-opportunity-section .sub-heading {
+    font-size: 1.2em;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.career-opportunity-section .description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+/* Work Experience Section */
+.work-experience-section {
+    padding: 80px 0;
+    background-color: var(--secondary-bg);
+}
+
+.work-experience-section h2 {
+    color: var(--white-color);
+}
+
+.experience-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.experience-cards .card {
+    background-color: var(--primary-bg);
+    padding: 30px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-icon {
+    font-size: 3em;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: var(--text-color);
+    margin-bottom: 25px;
+}
+
+.learn-more-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--highlight-color);
+    transform: translateY(-2px);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-intro {
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+.highlight-skills {
+    color: var(--highlight-color);
+    font-weight: 600;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.skill-item img {
+    width: 50px; /* Adjust size for skill icons */
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.central-logo {
+    margin: 60px auto;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, var(--highlight-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(160, 106, 211, 0.6);
+    position: relative;
+    z-index: 2;
+}
+
+.central-logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Makes placeholder white */
+}
+
+
+.circular-elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Adjust size of the circular paths */
+    height: 600px;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    animation: rotate 60s linear infinite; /* Example animation */
+    z-index: 0; /* Ensure it's behind content */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--secondary-bg);
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+    color: var(--text-color);
+}
+
+.contact-section .email {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--highlight-color);
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    font-size: 1.8em;
+    margin: 0 15px;
+    color: var(--white-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--highlight-color);
+}
+
+/* Animations */
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-card {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-cards .card {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-bg);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links a {
+        margin: 0;
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .navbar .container {
+        justify-content: space-between; /* To push icon to one side */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .skills-intro {
+        font-size: 1.1em;
+    }
+
+    .circular-elements {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .avatar-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .central-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .circular-elements {
+        width: 300px;
+        height: 300px;
+    }
+}
     </style>
 </head>
-    <div class="menu">
-        <nav>
-            <ul style="justify-content: flex-start; padding-left: 20px;">
-                <li>
-                    <a href="#">Portfolio</a>
-                    <div class="dropdown">
-                        <a href="#" onclick="showSection('all')">All</a>
-                        <a href="#" onclick="showSection('about')">Objective</a>
-                        <a href="#" onclick="showSection('experience')">Experience</a>
-                        <a href="#" onclick="showSection('education')">Education</a>
-                        <a href="#" onclick="showSection('skills')">Skills</a>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="intro-card">
+                    <p class="greeting">Hello! I Am <span class="highlight-name">Richie John San Gaspar</span></p>
+                    <h1>Don't judges the book <br> by its <span class="cover-text">cover...</span></h1>
+                    <p class="tagline">who knows, you might just find the next UX/UI designer your team needs.</p>
+                </div>
+                <div class="avatar-container">
+                    <img src="Me.png" alt="Richie John San Gaspar Avatar" class="avatar">
+                </div>
+            </div>
+        </section>
+
+        <section class="career-opportunity-section" id="about">
+            <div class="container">
+                <h2>I am seeking a career opportunity</h2>
+                <p class="sub-heading">That aligns with my long-term goals and helps secure my future.</p>
+                <p class="description">
+                    I'm a self-taught UI/UX designer. I am driven by a passion to learn and
+                    ready to commit myself fully to opportunities that will significantly expand
+                    my knowledge and experience.
+                </p>
+            </div>
+        </section>
+
+        <section class="work-experience-section">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-cards">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Technical Support Representative</h3>
+                        <p>Providing technical assistance and support for incoming queries and issues related to computer systems, software, and hardware.</p>
+                        <button class="learn-more-btn">LEARN MORE</button>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Technical Support Representative</h3>
+                        <p>Diagnosing and troubleshooting technical issues, including account setup and network configuration.</p>
+                        <button class="learn-more-btn">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <p class="skills-intro">I'm currently looking to join a <span class="highlight-skills">cross-functional</span> team <br> that values improving people's lives through accessible design</p>
+                <div class="skill-icons">
+                    <div class="skill-item"><img src="https://s3-alpha.figma.com/hub/file/1166690750/85f69649-5387-44c2-ba45-81ae13812e36-cover.png" alt="Figma"><span>Figma</span></div>
+                    <div class="skill-item"><img src="https://1000logos.net/wp-content/uploads/2020/03/Canva-icon.png" alt="Canva"><span>Canva</span></div>
+                    <div class="skill-item"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/capcut-icon.png" alt="Capcut"><span>Capcut</span></div>
+                    <div class="skill-item"><img src="https://images.seeklogo.com/logo-png/28/1/sketchup-logo-png_seeklogo-282937.png" alt="Sketch Up"><span>Sketch Up</span></div>
+                    <div class="skill-item"><img src="https://miro.medium.com/v2/resize:fit:596/format:webp/1*UeR6loyEl-mQGSd838X1-w.png" alt="Cisco"><span>Cisco</span></div>
+                    <div class="skill-item"><img src="https://cdn.iconscout.com/icon/free/png-512/free-html-5-icon-svg-download-png-1175208.png?f=webp&w=256" alt="HTML"><span>HTML</span></div>
+                    <div class="skill-item"><img src="https://cdn.iconscout.com/icon/free/png-512/free-css-alt-logo-icon-svg-download-png-2944811.png?f=webp&w=256" alt="CSS"><span>CSS</span></div>
+                </div>
+                <div class="central-logo">
+                    <alt="Central Logo">
+                <div class="circular-elements">
+                    <div class="circle-path"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>I'm currently looking to join a cross-functional team that values improving people's lives
+                    through accessible design or have a project in mind? Let's connect!</p>
+                <p class="email">richiejohn735@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/rtch1_1/" title="This link will direct you to Instagram."><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/ritchiejohn11" title="This link will direct you to Github."><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ritchie-john-san-gaspar-465906279/" title="This link will direct you to LinkedIn."><i class="fab fa-linkedin"></i></a>
+                    <a href="http://127.0.0.1:5500/Ritchie/Code/index.html" title="This link will direct you to Resume."><i class="fas fa-file"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.card section').forEach(section => {
-                section.style.display = 'none';
-            });
-            
-            // Show all sections if 'all' is selected
-            if (sectionId === 'all') {
-                document.querySelectorAll('.card section').forEach(section => {
-                    section.style.display = 'block';
-                });
-                return;
-            }
-            
-            // Show selected section
-            const selectedSection = document.querySelector(`.card section:nth-of-type(${
-                sectionId === 'about' ? '1' :
-                sectionId === 'experience' ? '2' :
-                sectionId === 'education' ? '3' : '4'
-            })`);
-            if (selectedSection) {
-                selectedSection.style.display = 'block';
-            }
-        }
-
-        // Show All sections by default
-        showSection('all');
+        // Optional: Simple JS for mobile menu toggle
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
-<body>
-    <div class="container">
-        <div class="card">
-            <header>
-                <h1>Ritchie John San Gaspar</h1>
-            </header>
-            <main>
-                <section>
-                    <h2>Objective</h2>
-                        <p>
-                            Computer Engineering graduate, looking to start a career and gain experience. Committed to continuous learning and growth, with a mission to develop innovative technology solutions and contribute positively to the industry.
-                        </p>
-                </section>
-                <section>
-                    <h2>Experience</h2>
-                    <div>
-                        <a href="https://foundever.com/" target="_blank" title="This link will direct you to Foundever's website.">Foundever</a>
-                        <p><strong>Position:</strong> Technical Support Representative</p>
-                        <p><strong>Duration:</strong> January 2024 - March 2024</p>
-                        <p>At Foundever, I work as a Technical Support Representative specializing in home appliance products. As part of my duties, I assist clients over the phone with technical problems often related to audio systems and televisions. To solve their issues, I carefully guide clients through investigation and troubleshooting procedures while attentively recording every exchange in our internal database to preserve an open history and support effiecient handling of cases.</p>
-                    </div>
-                    <div>
-                        <a href="https://hierpayroll.com/" target="_blank" style="text-decoration: none;" title="This link will direct you to Hier Business Solution Inc.'s website."> Hier Business Solutions Inc.</a>
-                        <p><strong>Position:</strong> Technical Support Representative</p>
-                        <p><strong>Duration:</strong> February 2025 - September 2025</p>
-                        <p>As a Technical Support Representative at Hier Business Solution, Incorporated is centered on empowering clients to master our payroll system. I provide comprehensive support, guiding them through the system's features, answering their questions, and promptly resolving any discrepancies. My goal is to ensure every client is fully equipped to leverage our solution for their business needs.
-                    </section>
-                    <section>
-                        <h2>Education</h2>
-                        <div>
-                            <h><strong>School:</strong> Colegio de San Gabriel Arcangel</h>
-                            <p><strong>Degree:</strong> Bachelor of Science in Computer Engineering</p>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </section>
-                    <!-- New Download Section -->
-                    <section class="download-section"></section>
-                        <a href="Resume - San Gaspar.pdf" download="Resume - San Gaspar.pdf" aria-label="Download resume in PDF format">
-                            <button> Download My Resume </button>
-                        </a>
-                    </section>
-                </main>
-                <footer>
-                    <p>&copy; 2024 Ritchie John San Gaspar. All Rights Reserved. | Last updated: October 2025</p>
-                </footer>
-            </div>
-        </div>
-    </body>
+</body>
 </html>
